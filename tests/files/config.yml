@@ -4,7 +4,8 @@ execbeat:
     -
       schedule: "@every 1m"
       command: echo1
-      args: "Execbeat"
+      args:
+        - "Execbeat"
       fields:
         foo1: bar1
         foo2: bar2
@@ -12,4 +13,5 @@ execbeat:
     -
       schedule: "@every 2m"
       command: echo2
-      args: "Hello World"
+      args:
+        - "Hello World"

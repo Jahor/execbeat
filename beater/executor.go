@@ -60,10 +60,7 @@ func (e *Executor) runOneTime() error {
 
 	cmdName := strings.TrimSpace(e.config.Command)
 
-	args := strings.TrimSpace(e.config.Args)
-	if len(args) > 0 {
-		cmdArgs = strings.Split(args, " ")
-	}
+	cmdArgs = e.config.Args
 
 	// execute command
 	now := time.Now()

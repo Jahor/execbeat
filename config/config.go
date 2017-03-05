@@ -13,7 +13,7 @@ type ExecbeatConfig struct {
 type ExecConfig struct {
 	Schedule     string
 	Command      string
-	Args         string
+	Args         []string
 	DocumentType string            `config:"document_type"`
 	Fields       map[string]string `config:"fields"`
 }
